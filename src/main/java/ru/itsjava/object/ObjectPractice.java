@@ -21,5 +21,8 @@ public class ObjectPractice {
         System.out.println("gurka.toString() = " + gurka.toString());
         System.out.println("gurka.getNickname() = " + gurka.getNickname());
 
+       gurka.equals(murka);
+        System.out.println(gurka.hashCode());
+
     }
 }

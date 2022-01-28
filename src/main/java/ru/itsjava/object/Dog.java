@@ -17,21 +17,21 @@ public class Dog {
 //        this.pawsCount = pawsCount;
 //    }
 
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//
-//        Dog dog = (Dog) o;
-//
-//        if (pawsCount != dog.pawsCount) return false;
-//        return nickname.equals(dog.nickname);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return nickname.hashCode();
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Dog dog = (Dog) o;
+
+        if (pawsCount != dog.pawsCount) return false;
+        return nickname.equals(dog.nickname);
+    }
+
+    @Override
+    public int hashCode() {
+        return nickname.hashCode();
+    }
 //
 //    @Override
 //    public String toString() {
