@@ -1,16 +1,7 @@
 package ru.itsjava.interfaces.hw;
 
-public class Man implements Walkable,Runnable,Swimmable,Flyable{
-    @Override
-    public void fly() {
-        System.out.println("Только при помощи технологий");
+public class Man implements Walkable,Runnable, Swimable{
 
-    }
-
-    @Override
-    public String flyMaxDistance() {
-        return "1500";
-    }
 
     @Override
     public void run() {
@@ -23,7 +14,7 @@ public class Man implements Walkable,Runnable,Swimmable,Flyable{
     }
 
     @Override
-    public void swimm() {
+    public void swim() {
         System.out.println("Ходим в бассейн");
     }
 

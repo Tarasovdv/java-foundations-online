@@ -1,16 +1,7 @@
 package ru.itsjava.interfaces.hw;
 
-public class Dog implements Walkable,Runnable,Swimmable,Flyable{
-    @Override
-    public void fly() {
-        System.out.println(" Летать? неа!");
+public class Dog implements Walkable,Runnable, Swimable{
 
-    }
-
-    @Override
-    public String flyMaxDistance() {
-        return null;
-    }
 
     @Override
     public void run() {
@@ -23,7 +14,7 @@ public class Dog implements Walkable,Runnable,Swimmable,Flyable{
     }
 
     @Override
-    public void swimm() {
+    public void swim() {
         System.out.println("Плыыыыыть");
     }
 

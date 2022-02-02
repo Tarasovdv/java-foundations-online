@@ -3,20 +3,20 @@ package ru.itsjava.interfaces.hw;
 public class Polygon {
     public static void main(String[] args) {
 
-        Bird bird = new Bird();
-        Cat cat = new Cat();
-        Dog dog = new Dog();
-        Fish fish = new Fish();
-        Man man = new Man();
+        Flyable bird = new Bird();
+        Walkable cat = new Cat();
+        Runnable dog = new Dog();
+        Swimable fish = new Fish();
+        Walkable man = new Man();
 
         bird.fly();
         System.out.println("bird.flyMaxDistance() = " + bird.flyMaxDistance());
-        bird.run();
-        System.out.println("bird.maxRunDistance() = " + bird.maxRunDistance());
+        bird.fly();
+        System.out.println("bird.maxRunDistance() = " + bird.flyMaxDistance());
 
         cat.walk();
         dog.run();
-        fish.fly();
+        fish.swim();
         man.walk();
 
 

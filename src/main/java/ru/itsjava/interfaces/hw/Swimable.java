@@ -1,6 +1,6 @@
 package ru.itsjava.interfaces.hw;
 
-public interface Swimmable {
-    void swimm();
+public interface Swimable {
+    void swim();
     double maxSwimSpeed();
 }

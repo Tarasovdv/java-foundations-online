@@ -1,6 +1,6 @@
 package ru.itsjava.interfaces.hw;
 
-public class Bird implements Walkable,Runnable,Swimmable,Flyable{
+public class Bird implements Walkable,Runnable, Swimable,Flyable{
     @Override
     public void fly() {
         System.out.println("Летать-наше призвание!!!");
@@ -24,7 +24,7 @@ public class Bird implements Walkable,Runnable,Swimmable,Flyable{
     }
 
     @Override
-    public void swimm() {
+    public void swim() {
         System.out.println("Плавать любим");
 
     }

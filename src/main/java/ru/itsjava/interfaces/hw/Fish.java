@@ -1,28 +1,10 @@
 package ru.itsjava.interfaces.hw;
 
-public class Fish implements Walkable,Runnable,Swimmable,Flyable{
-    @Override
-    public void fly() {
-        System.out.println("   no    ");
-    }
+public class Fish implements Swimable {
+
 
     @Override
-    public String flyMaxDistance() {
-        return null;
-    }
-
-    @Override
-    public void run() {
-        System.out.println("   no    ");
-    }
-
-    @Override
-    public int maxRunDistance() {
-        return 0;
-    }
-
-    @Override
-    public void swimm() {
+    public void swim() {
         System.out.println("  yes   ");
     }
 
@@ -31,8 +13,5 @@ public class Fish implements Walkable,Runnable,Swimmable,Flyable{
         return 100;
     }
 
-    @Override
-    public void walk() {
-        System.out.println("   no    ");
-    }
+
 }
