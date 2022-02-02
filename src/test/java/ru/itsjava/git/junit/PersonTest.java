@@ -40,12 +40,10 @@ public class PersonTest {
         Person actualPerson = new Person(DEFAULT_NAME, DEFAULT_AGE);
         Person newPerson = new Person(NEW_NAME, NEW_AGE);
 
-//        System.out.println("newPerson.getAge() = " + newPerson.getAge());
+        assertFalse(newPerson.takeBeer());
         newPerson.birthday();
-//        System.out.println("newPerson.getAge() = " + newPerson.getAge());
-
-        assertTrue(MAJORITY <= newPerson.getAge());
-//        assertTrue(MAJORITY <= actualPerson.getAge());
+        assertTrue(newPerson.takeBeer());
+        assertTrue(actualPerson.takeBeer());
 
 
     }
